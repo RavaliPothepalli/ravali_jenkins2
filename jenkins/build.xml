@@ -1,0 +1,20 @@
+<project name="banking" default="savings">
+<echo message="welcome to bank sector"/>
+
+<property name="patch" value=""/>
+<property name="release" value=""/>
+
+<echo message="value of patch: ${patch}"/>
+<echo message="value of release: ${release}"/>
+
+<target name="savings">
+<echo message="welcome to savings section"/>
+</target>
+
+<target name="loans" depends="savings">
+<echo message="welcome to loans"/>
+</target>
+
+<echo message="welcome to bank"/>
+
+</project>
